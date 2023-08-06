@@ -14,6 +14,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
@@ -25,9 +26,15 @@ flutter:
 
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
+    - family: Black
+      fonts:
+        - asset: assets/fonts/ArchivoBlack-Regular.ttf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

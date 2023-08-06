@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/screen/web_screen.dart';
+import 'constants/constants.dart';
 import 'constants/screenwidth.dart';
 
 void main() {
@@ -13,7 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Colors.cyanAccent),
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          inputDecorationTheme: kDefaultInputDecorationTheme,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
       home: const WebScreen()
     );
   }
