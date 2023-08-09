@@ -387,6 +387,20 @@ class _WebScreenState extends State<WebScreen> {
                 ],
               ),
             ),
+            const SizedBox(height: 5,),
+            Container(
+              margin: const EdgeInsets.all(10.0),
+              child: Column(
+                children: const [
+                  Text('Work Experience:',style:TextStyle(
+                      fontSize: 30.0,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      color: Color(0xFFa9acaf)
+                  )),
+                ],
+              ),
+            )
           ],
         ),
       ));
