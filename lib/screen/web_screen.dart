@@ -31,7 +31,7 @@ class _WebScreenState extends State<WebScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height:380,
+              height: s.height/1.5,
               width: double.maxFinite,
               child: Stack(
                 children: [
@@ -86,7 +86,7 @@ class _WebScreenState extends State<WebScreen> {
                   ),
                   Positioned(
                         right:60,
-                        bottom:100,
+                        bottom:s.height/5,
                         child: Container(
                             padding: EdgeInsets.all(6.0),
                             height:220,
@@ -170,8 +170,8 @@ class _WebScreenState extends State<WebScreen> {
                   )),**/
                   Positioned(
                     left:0,
-                    top:220,
-                    right:300,
+                    top:s.height/2.9,
+                    right:s.width/3,
                     child: Container(
                       padding: const EdgeInsets.all(10.0),
                       decoration: BoxDecoration(color: const Color(0xFF2d333b),borderRadius: BorderRadius.circular(5.0)),
@@ -210,10 +210,10 @@ class _WebScreenState extends State<WebScreen> {
               ),
             ),
             Container(
-              width:715,
-              padding: const EdgeInsets.all(10.0),
+              width:s.width/1.54,
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
               decoration: BoxDecoration(color: const Color(0xFF2d333b),borderRadius: BorderRadius.circular(5.0)),
-              margin: const EdgeInsets.all(10),
+              margin: const EdgeInsets.symmetric(horizontal: 10,vertical: 15),
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -293,6 +293,95 @@ class _WebScreenState extends State<WebScreen> {
                   ),
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                      child: const Divider(color: Color(0xFFa9acaf),thickness: 0.2,))
+
+                ],
+              ),
+            ),
+            Container(
+              width:s.width/1.54,
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+              decoration: BoxDecoration(color: const Color(0xFF2d333b),borderRadius: BorderRadius.circular(5.0)),
+              margin: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Skills:',style:TextStyle(
+                      fontSize: 30.0,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w400,
+                      color: Color(0xFFa9acaf)
+                  )),
+                  Row(
+                    children: [
+                      InkWell(
+                        child: SvgPicture.asset(
+                          'assets/images/icons8-dart.svg',
+                          height: 36,
+                          width: 36,
+                        ),
+                        onTap: () async{
+                          const url = 'https://dart.dev/';
+                          if(await canLaunch(url)){
+                            await launch(url);
+                          }else {
+                            throw 'Could not launch $url';
+                          }
+                        },
+                      ),
+                      const SizedBox(width: 10,),
+                      InkWell(
+                        child: SvgPicture.asset(
+                          'assets/images/icons8-python.svg',
+                          height: 38,
+                          width: 38,
+                        ),
+                        onTap: () async{
+                          const url = 'https://www.python.org/';
+                          if(await canLaunch(url)){
+                            await launch(url);
+                          }else {
+                            throw 'Could not launch $url';
+                          }
+                        },
+                      ),
+                      const SizedBox(width: 10,),
+                      InkWell(
+                        child: SvgPicture.asset(
+                          'assets/images/icons8-java.svg',
+                          height: 35,
+                          width: 35,
+                        ),
+                        onTap: () async{
+                          const url = 'https://www.w3schools.com/java/';
+                          if(await canLaunch(url)){
+                            await launch(url);
+                          }else {
+                            throw 'Could not launch $url';
+                          }
+                        },
+                      ),
+                      const SizedBox(width: 10,),
+                      InkWell(
+                        child: SvgPicture.asset(
+                          'assets/images/icons8-c++.svg',
+                          height: 33,
+                          width: 33,
+                        ),
+                        onTap: () async{
+                          const url = 'https://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language';
+                          if(await canLaunch(url)){
+                            await launch(url);
+                          }else {
+                            throw 'Could not launch $url';
+                          }
+                        },
+                      )
+                    ],
+                  ),
+                  Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
                       child: const Divider(color: Color(0xFFa9acaf),thickness: 0.2,))
 
                 ],
