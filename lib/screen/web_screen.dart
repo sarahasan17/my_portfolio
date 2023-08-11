@@ -413,11 +413,7 @@ class _WebScreenState extends State<WebScreen> {
                 children: [
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 10),
-                      child:  SvgPicture.asset(
-                        'assets/images/logooo 1 (1).svg',
-                        height: 36,
-                        width: 36,
-                      ),),
+                      child: Image.asset('assets/images/logo.png',fit: BoxFit.cover,)),
                   const SizedBox(width: 10,),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
