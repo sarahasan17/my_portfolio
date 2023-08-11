@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import '../constants/screenwidth.dart';
@@ -391,16 +392,126 @@ class _WebScreenState extends State<WebScreen> {
             Container(
               margin: const EdgeInsets.all(10.0),
               child: Column(
-                children: const [
+                children: [
                   Text('Work Experience:',style:TextStyle(
                       fontSize: 30.0,
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w400,
                       color: Color(0xFFa9acaf)
                   )),
+
                 ],
               ),
-            )
+            ),
+            Container(
+              width:s.width/1.54,
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+              decoration: BoxDecoration(color: const Color(0xFF2d333b),borderRadius: BorderRadius.circular(5.0)),
+              margin: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child:Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 10),
+                      child:  SvgPicture.asset(
+                        'assets/images/logooo 1 (1).svg',
+                        height: 36,
+                        width: 36,
+                      ),),
+                  const SizedBox(width: 10,),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text('App Dev Intern',style:TextStyle(
+                          fontSize: 20.0,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w100,
+                          color: Colors.white70,
+                      )),
+                      const SizedBox(height: 2,),
+                      const Text('Jaunnt · Internship',style:TextStyle(
+                        fontSize: 17.0,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w100,
+                        color: Colors.white70,
+                      )),
+                      const SizedBox(height: 3,),
+                      const Text('Apr 2023 - Jun 2023 · 3 mos',style:TextStyle(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.grey,
+                      )),
+                      const SizedBox(height: 3,),
+                      const Text('Bangalore Urban, Karnataka, India · Remote',style:TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.grey,
+                      )),
+                      const SizedBox(height: 10,),
+                      Container(
+                        width: s.width/1.9,
+                        child: const Text('Developed the Application for a travel startup Jaunnt',style:TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white70,
+                        )),
+                      ),
+                      const SizedBox(height: 10,),
+                      SizedBox(
+                        width: s.width/1.9,
+                        child: RichText(
+                          textScaleFactor: 1.1,
+                          text: const TextSpan(
+                            text:
+                            'Skills : ',
+                            style:TextStyle(
+                            fontSize: 13.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white70,
+                          ),
+                            children: [
+                              TextSpan(
+                                  text:
+                                  'Android Development · iOS Development · State Management · bloc · Cubit · Flutter Development ',
+                                  style: TextStyle(
+                                    fontSize: 13.0,
+                                    fontWeight: FontWeight.w400,
+                                    color: Colors.white70,
+                                  ),),
+                            ],
+                          ),),
+                      ),
+                      const SizedBox(height: 10,),
+                      Container(
+                        width: s.width/1.9,child: Row(
+                        children: [
+                      InkWell(
+                      child: const Icon(CupertinoIcons.link,size: 22,color: Colors.white70,),
+                          onTap: () async{
+                            const url = 'https://drive.google.com/file/d/1CdEliqsV0cUQJiZLPbeNVDR4vuMprHAo/view?usp=sharing';
+                            if(await canLaunch(url)){
+                              await launch(url);
+                            }else {
+                              throw 'Could not launch $url';
+                            }
+                          },),
+                          const SizedBox(width: 10,),
+                          const Text('Internship Completion Certificate',style:TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey,
+                          ))
+
+                        ],
+                      ),
+                      )
+
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ));
