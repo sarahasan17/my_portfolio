@@ -739,6 +739,161 @@ class _WebScreenState extends State<WebScreen> {
                   Container(
                     margin: const EdgeInsets.symmetric(vertical:5,horizontal: 10.0),
                       child: const Divider(thickness: 0.2,color: Colors.grey,)),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      InkWell(
+                        child: Container(
+                          height: 36,
+                            margin: const EdgeInsets.symmetric(vertical: 10),
+                            child: Image.asset('assets/images/vitrendz.png',fit: BoxFit.cover,)),
+                        onTap: () async{
+                          const url = 'https://www.linkedin.com/company/vitrendz/';
+                          if(await canLaunch(url)){
+                            await launch(url);
+                          }else {
+                            throw 'Could not launch $url';
+                          }
+                        },),
+                      const SizedBox(width: 14,),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text('App Development',style:TextStyle(
+                            fontSize: 20.0,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w100,
+                            color: Colors.white70,
+                          )),
+                          const SizedBox(height: 2,),
+                          const Text('VITrendz',style:TextStyle(
+                            fontSize: 17.0,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w100,
+                            color: Colors.white70,
+                          )),
+                          const SizedBox(height: 3,),
+                          const Text('Jan 2023 - May 2023 · 5 mos',style:TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey,
+                          )),
+                          const SizedBox(height: 3,),
+                          const Text('Vellore, Tamil Nadu, India · On-site',style:TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey,
+                          )),
+                          const SizedBox(height: 10,),
+                          SizedBox(
+                            width: s.width/1.9,
+                            child: RichText(
+                              textScaleFactor: 1.1,
+                              text: const TextSpan(
+                                text:
+                                'Skills : ',
+                                style:TextStyle(
+                                  fontSize: 13.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white70,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text:
+                                    'Flutter Development ',
+                                    style: TextStyle(
+                                      fontSize: 13.0,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white70,
+                                    ),),
+                                ],
+                              ),),
+                          ),
+                          const SizedBox(height: 10,),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Container(
+                      margin: const EdgeInsets.symmetric(vertical:5,horizontal: 10.0),
+                      child: const Divider(thickness: 0.2,color: Colors.grey,)),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      InkWell(
+                        child: Container(
+                            height: 36,
+                            margin: const EdgeInsets.symmetric(vertical: 10),
+                            child: Image.asset('assets/images/vitrendz.png',fit: BoxFit.cover,)),
+                        onTap: () async{
+                          const url = 'https://www.linkedin.com/company/vitrendz/';
+                          if(await canLaunch(url)){
+                            await launch(url);
+                          }else {
+                            throw 'Could not launch $url';
+                          }
+                        },),
+                      const SizedBox(width: 14,),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text('App Development',style:TextStyle(
+                            fontSize: 20.0,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w100,
+                            color: Colors.white70,
+                          )),
+                          const SizedBox(height: 2,),
+                          const Text('VITrendz',style:TextStyle(
+                            fontSize: 17.0,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w100,
+                            color: Colors.white70,
+                          )),
+                          const SizedBox(height: 3,),
+                          const Text('Jan 2023 - May 2023 · 5 mos',style:TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey,
+                          )),
+                          const SizedBox(height: 3,),
+                          const Text('Vellore, Tamil Nadu, India · On-site',style:TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey,
+                          )),
+                          const SizedBox(height: 10,),
+                          SizedBox(
+                            width: s.width/1.9,
+                            child: RichText(
+                              textScaleFactor: 1.1,
+                              text: const TextSpan(
+                                text:
+                                'Skills : ',
+                                style:TextStyle(
+                                  fontSize: 13.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white70,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text:
+                                    'Flutter Development ',
+                                    style: TextStyle(
+                                      fontSize: 13.0,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white70,
+                                    ),),
+                                ],
+                              ),),
+                          ),
+                          const SizedBox(height: 10,),
+                        ],
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
