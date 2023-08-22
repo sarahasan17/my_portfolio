@@ -561,14 +561,14 @@ class _WebScreenState extends State<WebScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text('CodeChef-VIT',style:TextStyle(
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w100,
                             color: Colors.white70,
                           )),
                           SizedBox(height: 1.5,),
                           Text('1 yr 6 mos',style:TextStyle(
-                            fontSize: 16.5,
+                            fontSize: 15,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey,
                           )),
@@ -581,31 +581,164 @@ class _WebScreenState extends State<WebScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const SizedBox(width: 16,),
-                      const CircleAvatar(
-                        radius:5,
-                        backgroundColor: Colors.grey,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const CircleAvatar(
+                            radius:5,
+                            backgroundColor: Colors.grey,
+                          ),
+                          const SizedBox(height: 5),
+                          Container(
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(2.0),color: Colors.grey),
+                          width: 2,
+                          height: 200000/s.width,)
+                        ],
                       ),
-                      const SizedBox(width: 3,),
+                      const SizedBox(width: 30),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text('CodeChef-VIT',style:TextStyle(
-                            fontSize: 20.0,
+                        children: [
+                          const Text('Senior Core',style:TextStyle(
+                            fontSize: 18.0,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w100,
                             color: Colors.white70,
                           )),
-                          SizedBox(height: 1.5,),
-                          Text('1 yr 6 mos',style:TextStyle(
-                            fontSize: 16.5,
+                          const SizedBox(height: 1.5,),
+                          const Text('Feb 2023 - Present . 7 mos',style:TextStyle(
+                            fontSize: 15,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey,
                           )),
+                          const SizedBox(height: 8,),
+                          SizedBox(
+                            width: s.width/1.9,
+                            child: RichText(
+                              textScaleFactor: 1.1,
+                              text: const TextSpan(
+                                text:
+                                'Skills : ',
+                                style:TextStyle(
+                                  fontSize: 13.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white70,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text:
+                                    'Android Development · iOS Development · State Management · bloc · Cubit · Flutter Development ',
+                                    style: TextStyle(
+                                      fontSize: 13.0,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white70,
+                                    ),),
+                                ],
+                              ),),
+                          ),
+                          const SizedBox(height: 8,),
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: SizedBox(
+                                  width: 170,
+                                  child: Image.asset('assets/images/devsoc.png',fit: BoxFit.cover,
+                              ),
+                                )),
+                              const SizedBox(width: 10,),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text('Devsoc Hackathon- Organizing team',style:TextStyle(
+                                    fontSize: 15.0,
+                                    fontFamily: 'Poppins',
+                                    fontWeight: FontWeight.w100,
+                                    color: Colors.white70,
+                                  )),
+                                  Text('largest student run hackathon in South Asia with more than 1300 participant',style:TextStyle(
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.w100,
+                                    color: Colors.white70,
+                                  )),
+                                ],
+                              )
+                            ],
+                          ),
                         ],
                       ),
                     ],
-                  )
+                  ),
+                  const SizedBox(height: 10,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      const SizedBox(width: 16,),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const CircleAvatar(
+                            radius:5,
+                            backgroundColor: Colors.grey,
+                          ),
+                          const SizedBox(height: 5),
+                          Container(
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(2.0),color: Colors.grey),
+                            width: 2,
+                            height: 65000/s.width,)
+                        ],
+                      ),
+                      const SizedBox(width: 30),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:[
+                          const Text('Core Committee Member 2022-23',style:TextStyle(
+                            fontSize: 18.0,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w100,
+                            color: Colors.white70,
+                          )),
+                          const SizedBox(height: 1.5,),
+                          const Text('Mar 2022 - Present . 1 yr 6 mos',style:TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.grey,
+                          )),
+                          const SizedBox(height: 8,),
+                          SizedBox(
+                            width: s.width/1.9,
+                            child: RichText(
+                              textScaleFactor: 1.1,
+                              text: const TextSpan(
+                                text:
+                                'Skills : ',
+                                style:TextStyle(
+                                  fontSize: 13.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white70,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text:
+                                    'Android Development · iOS Development · State Management · bloc · Cubit · Flutter Development ',
+                                    style: TextStyle(
+                                      fontSize: 13.0,
+                                      fontWeight: FontWeight.w400,
+                                      color: Colors.white70,
+                                    ),),
+                                ],
+                              ),),
+                          ),
+                          const SizedBox(height: 8,),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical:5,horizontal: 10.0),
+                      child: const Divider(thickness: 0.2,color: Colors.grey,)),
                 ],
               ),
             ),
