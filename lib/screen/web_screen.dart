@@ -761,16 +761,15 @@ class _WebScreenState extends State<WebScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text('App Development',style:TextStyle(
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w100,
                             color: Colors.white70,
                           )),
                           const SizedBox(height: 2,),
                           const Text('VITrendz',style:TextStyle(
-                            fontSize: 17.0,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w100,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.w400,
                             color: Colors.white70,
                           )),
                           const SizedBox(height: 3,),
@@ -825,9 +824,9 @@ class _WebScreenState extends State<WebScreen> {
                         child: Container(
                             height: 36,
                             margin: const EdgeInsets.symmetric(vertical: 10),
-                            child: Image.asset('assets/images/vitrendz.png',fit: BoxFit.cover,)),
+                            child: Image.asset('assets/images/anchoring.png',fit: BoxFit.cover,)),
                         onTap: () async{
-                          const url = 'https://www.linkedin.com/company/vitrendz/';
+                          const url = 'https://www.linkedin.com/company/vit-anchoring-club/';
                           if(await canLaunch(url)){
                             await launch(url);
                           }else {
@@ -839,21 +838,20 @@ class _WebScreenState extends State<WebScreen> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('App Development',style:TextStyle(
-                            fontSize: 20.0,
+                          const Text('Core Committee Member',style:TextStyle(
+                            fontSize: 18.0,
                             fontFamily: 'Poppins',
                             fontWeight: FontWeight.w100,
                             color: Colors.white70,
                           )),
                           const SizedBox(height: 2,),
-                          const Text('VITrendz',style:TextStyle(
-                            fontSize: 17.0,
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w100,
+                          const Text('VIT Anchoring Club',style:TextStyle(
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.w400,
                             color: Colors.white70,
                           )),
                           const SizedBox(height: 3,),
-                          const Text('Jan 2023 - May 2023 · 5 mos',style:TextStyle(
+                          const Text('Mar 2022 - Oct 2022 · 8 mos',style:TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.w400,
                             color: Colors.grey,
@@ -880,7 +878,7 @@ class _WebScreenState extends State<WebScreen> {
                                 children: [
                                   TextSpan(
                                     text:
-                                    'Flutter Development ',
+                                    'Public Speaking · Management ',
                                     style: TextStyle(
                                       fontSize: 13.0,
                                       fontWeight: FontWeight.w400,
